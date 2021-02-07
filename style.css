@@ -1,0 +1,59 @@
+#meal-store {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+#meal-store>div {
+  background-color: #F8F7F5;
+  width: 250px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#meal-store>div>img {
+  width: 100%;
+  height: 240px;
+}
+
+#meal-store>div>p {
+  font-weight: 500;
+  text-align: center;
+  padding: 20px 0px 10px 0px;
+}
+
+#meal-ingredient {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 400px;
+  height: 600px;
+  background-color: #F8F7F5;
+  border-radius: 10px;
+  overflow: hidden;
+  display: none;
+}
+
+#meal-ingredient>img {
+  min-width: 400px;
+  height: 200px;
+}
+
+#ingredient-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 20px;
+}
+
+#ingredient-details>p {
+  margin-bottom: 0px;
+}
+
+#meal-ingredient>p {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}

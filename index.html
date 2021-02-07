@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hungry Monster</title>
+    <script src="https://kit.fontawesome.com/9cc8fb7cc6.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!------------- Search Section ------------>
+    <div class="container">
+        <form class="col-md-8 m-auto py-5">
+            <div class="input-group mb-3">
+                <input id="input-text" type="text" class="form-control"  placeholder="Search for Meal...">
+                <div class="input-group-append">
+                    <button onclick="mealInput()" type="button" class="btn btn-danger">Search</button>
+                </div>
+            </div>
+        </form>
+    <!-------------- Meal Store Section ------------>
+        <div class="py-2" id="meal-store"></div>
+
+    <!--------------- Meal Ingredient  ------------->
+        <div id="meal-ingredient" onclick="closeDetails()">
+            <img src="https://www.themealdb.com/images/media/meals/tyywsw1505930373.jpg/preview" id="thumbnail-details"/>
+            <div class="py-4 px-3">
+              <h4 id="meal-details">Meal</h4>
+              <h6 class="py-1">Ingredients</h6>
+              <div id="ingredient-details"></div>
+            </div>
+            <p class="text-center text-danger font-weight-bold">Note: Just click to close</p>
+          </div>   
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
